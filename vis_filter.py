@@ -38,6 +38,7 @@ print (len(matched_catalog))
 # List of labels to remove
 labels_to_remove = [11,13,19,24,34,50,28,51]
 
+
 # Filter out the rows where cat1_label is in labels_to_remove
 vis_filtered_catalog = matched_catalog[~np.isin(matched_catalog['cat1_label'], labels_to_remove)]
 
